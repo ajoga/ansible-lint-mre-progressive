@@ -1,0 +1,8 @@
+---
+
+- name: Install qemu agents
+  apt:
+    name: ['qemu-guest-agent']
+    install_recommends: no
+    update_cache: yes
+    cache_valid_time: 3600
